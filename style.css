@@ -1,0 +1,38 @@
+:root {
+  --background-color: #3c2b45;
+  --primary-color: #bab2bf;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1044px;;
+}
+
+section .callout-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+section .callout-container .callout {
+  width: 250px;
+  
+}
+
+@media screen and (min-width: 700px) {
+  section .callout-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
